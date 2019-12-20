@@ -2,9 +2,9 @@
 This report is intended to explain the work we have done with our final project.
 ### Authors
 * GABRIELE ZAMBRA
-* GIORGIO
+* GIORGIO Segalla 
 * JUNHUI LIANG
-* YANUIN WANG
+* Yanyun Wang
 * YAZAN SALTI
 
 ### Abstract (**5 points**)
@@ -27,7 +27,7 @@ Make an analysis on how the song's features are different in different country c
 [link](https://developer.spotify.com/documentation/web-api/reference/tracks/get-audio-features/))
 <br><br>
 - Which are the characteristics of the songs I like?<br>
-Analyzing **the features** of a Spotify playlist with the intent of finding patterns or any statistic significance in them in order to explain the criterion (or the criteria) beneath which a song is liked or not (by me, let's say).
+Analyzing **the features** of a Spotify playlist with the intent of finding patterns or any statistic significance in them in order to explain the criterion (or the criteria) beneath which a song is liked or not.
 <br><br>
 - How do the features of music influence the genre of music?<br>
 We would like to understand the relationship between features and different genres of music. The idea is to build a machine learning model between features and the label of each music.
@@ -103,7 +103,7 @@ The dataset, downloaded from [Kaggle](https://www.kaggle.com/pieca111/music-arti
 
     ![](hist.PNG)
 
-    Since most of the songs appear to be between 2 and 3 minutes it's better to classify them in just 3 categories: *short*, *medium*, *long*. In order to do this we mutate the data frame with the following commands:
+    Since most of the songs appear to be between 2 and 3 minutes it's better to classify them in just 3 categories: *short*, *medium*, *long*.
 
     We can now apply this new feature to give more insight to the next graphs.
 
@@ -171,17 +171,13 @@ The dataset, downloaded from [Kaggle](https://www.kaggle.com/pieca111/music-arti
     ![](pred.PNG)
 
     Looking at GoF parameters it looks like a good fit since the ratio between Residual Deviance and DoF it's close to 1.
-    We can use this model to make a prediction and the next step would be training an ML algorithm to predict the results and compare them.
+
 - How do the features of music influence the genre of music?<br>
   - Naive Bayes Model
 
     For the machine learning model, **naive bayes model** is chosen because it's used for classification with strong independence of features. For this prediction model, the label is the response variable and the other features are predictor variables. So here the input data is the divided into **x** and **y** for the training data and testing data as well.
 
-  ``  {r, echo = FALSE, warning=FALSE}
-   `` nbModel <- train(x,y,
-     ``trControl=train_control,
-       ``method="nb",
-         ``preProc = preProcessInTrain 
+    ``` {r, echo = FALSE, warning=FALSE} nbModel <- train(x,y,trControl=train_control,method="nb",preProc = preProcessInTrain ```
 
     To process the data, the *center* and *scale* method is applied for the standardization of data.
 
