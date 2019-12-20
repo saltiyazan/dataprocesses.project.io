@@ -2,9 +2,9 @@
 This report is intended to explain the work we have done with our final project.
 ### Authors
 * GABRIELE ZAMBRA
-* GIORGIO Segalla 
+* GIORGIO SEGALLA 
 * JUNHUI LIANG
-* Yanyun Wang
+* YANYUN WANG
 * YAZAN SALTI
 
 ### Abstract (**5 points**)
