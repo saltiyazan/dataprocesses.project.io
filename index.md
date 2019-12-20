@@ -18,7 +18,9 @@ In the next section we propose the questions of interest we would like to work w
 - What features have TOP100 artists in Europe and China?<br>
 Frankly speaking, there are dozens of datasets and people intended to analyze the musical characteristic rather than artist' feature. Thus, it would be very interesting to place more concerns on the artist themselves.
 <br><br>
+
 - How have duration, tempo and loudness of songs changed through time?<br>
+
 In the following analysis I am going to study the "msd" dataset to find out if the duration, the tempo or the loudness of most popular songs have changed over time since the 60' until 2010 or not.
 I will working with a dataset from [this](https://github.com/thomasSve/Million-Song-Dataset-Analysis/tree/master/datasets) Project
 <br><br>
@@ -42,7 +44,7 @@ The dataset, downloaded from [Kaggle](https://www.kaggle.com/pieca111/music-arti
   - **Other preprocess**: Finally, like the ***NA*** value and duplicate rows, we have to delete them to keep the dataset clean.
   - **Final Features Choose**: <font size="3"> [mbid,artist,country,tags, listeners_lastfm,scrobbles_lastfm]</font>
 
-  - How have duration, tempo and loudness of songs changed through time?<br>
+- How have duration, tempo and loudness of songs changed through time?<br>
   The dataset I am working with called msd was downloaded [from this Github project page](https://github.com/thomasSve/Million-Song-Dataset-Analysis/tree/master/datasets) and it is derived from the well known [OneMillionSong dataset](http://millionsongdataset.com/)
   The variables I am interested in form this dataset are:song_hotttnesss, duration, tempo and loudness.
 
