@@ -179,9 +179,9 @@ The dataset, downloaded from [Kaggle](https://www.kaggle.com/pieca111/music-arti
 
   ``  {r, echo = FALSE, warning=FALSE}
    `` nbModel <- train(x,y,
-     ``                trControl=train_control,
-       ``              method="nb",
-         ``            preProc = preProcessInTrain 
+     ``trControl=train_control,
+       ``method="nb",
+         ``preProc = preProcessInTrain 
 
     To process the data, the *center* and *scale* method is applied for the standardization of data.
 
