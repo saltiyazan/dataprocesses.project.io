@@ -177,11 +177,11 @@ The dataset, downloaded from [Kaggle](https://www.kaggle.com/pieca111/music-arti
 
     For the machine learning model, **naive bayes model** is chosen because it's used for classification with strong independence of features. For this prediction model, the label is the response variable and the other features are predictor variables. So here the input data is the divided into **x** and **y** for the training data and testing data as well.
 
-    {r, echo = FALSE, warning=FALSE}
-    nbModel <- train(x,y,
-                     trControl=train_control,
-                     method="nb",
-                     preProc = preProcessInTrain
+  ``  {r, echo = FALSE, warning=FALSE}
+   `` nbModel <- train(x,y,
+     ``                trControl=train_control,
+       ``              method="nb",
+         ``            preProc = preProcessInTrain 
 
     To process the data, the *center* and *scale* method is applied for the standardization of data.
 
