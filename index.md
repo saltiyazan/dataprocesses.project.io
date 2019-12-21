@@ -7,7 +7,7 @@ This report is intended to explain the work we have done with our final project.
 * YANYUN WANG
 * YAZAN SALTI
 
-### Abstract (**5 points**)
+### Abstract
 Streaming Music Service are nowadays very common, thanks to the internet they are now used everywhere. But now we have more, some services, like Spotify, are sharing data about the users and the songs. The aim of this project is to analyze and study part of this data.
 
 The analysis has been done principally with the usage of the R tool, so after pre-processing the data, we have started to make analysis, generating graphs and machine learning models and make predictions.
@@ -34,7 +34,7 @@ Analyzing **the features** of a Spotify playlist with the intent of finding patt
 - How do the features of music influence the genre of music?<br>
 We would like to understand the relationship between features and different genres of music. The idea is to build a machine learning model between features and the label of each music.
 
-### Exploratory Data Analysis (**20 points**)
+### Exploratory Data Analysis
 - What features have TOP100 artists in Europe and China?<br>
 The dataset, downloaded from [Kaggle](https://www.kaggle.com/pieca111/music-artists-popularity), consists of over 1.4 million musical artists presented in [MusicBrainz](https://musicbrainz.org) database -- their names, tags, and popularity(listeners or scrobbles), based on data scraped from [last.fm](https://www.last.fm).
 
